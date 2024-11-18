@@ -21,12 +21,12 @@ class _SplashScreenState extends State<SplashScreen> {
     quickActions.initialize((shortcutType) {
       setState(() {});
 
-      if (shortcutType == 'action_home') {
-        _navigateTo(const MyHomePage());
-      } else if (shortcutType == 'action_first') {
+      if (shortcutType == 'action_first') {
         _navigateTo(const FirstView());
       } else if (shortcutType == 'action_second') {
         _navigateTo(const Second());
+      } else {
+        _navigateTo(const MyHomePage());
       }
     });
 
